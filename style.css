@@ -1,0 +1,82 @@
+/* CSS for Church website*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.wrapper {
+    min-height: calc(100vh - 38px);
+}
+
+
+.main-header {
+    background-color: #e7f0b5;
+    width: 100%;
+    text-align: Left;
+    padding-top: 5px;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-nav {
+    background-color: #c2dea8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    float: right;
+}
+
+.main-nav li{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.welcome {
+    padding-top: 10px;
+
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #c2dea8;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* ================================= 
+  Media Queries
+==================================== */
+

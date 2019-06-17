@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Church Website</title>
+    <link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a><img class="main-logo" src="images/cross.jpg" alt="main-logo"></a>
+        <h1 class="name">Our Church</h1>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beliefs.html">Beliefs</a></li>
+                <li><a href="#">Ministries</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper-contact-us clearfix">
+        <div class="contact-form">
+            <h1 class="contact_heading">Contact Us</h1>
+            <p class="contact_paragraph">  We would love to hear from you!<br>We are here if you have questions or <br> if you just need prayer.<br>
+            Connect with us by submitting your message below and we will respond as soon as possible.</p>
+
+            <form action="index.html" method="post">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="Your first name">
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="Your last name">
+
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="user_message"></textarea>
+                <button type="submit">Submit</button>         
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Our Church<br> 123 Somewhere, Shepherdsville, KY 40165</p>
+            <p>email@gmail.com<br>
+            P: 502-555-5555</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

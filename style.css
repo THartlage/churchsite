@@ -14,28 +14,31 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
-    position: relative;
-    left: 10px;
+ul {
+    width: 100%;
+}
+
+table {
+    width: 100%;
 }
 
 /* ================================= 
-  Base Layout Styles
+  Base Layout Styles Home Page
 ==================================== */
 
 .wrapper {
-    min-height: 100%;
     line-height: 1.6;
-    margin-top: 139px;
+    margin-top: 350px;
 }
 
 .main-header {
     top: 0;
     background-color: #e7f0b5;
     width: 100%;
-    text-align: Left;
+    text-align: left;
     display: inline-block;
     position: fixed;
+    z-index: 99;
 }
 
 .main-logo {
@@ -46,23 +49,40 @@ h1 {
 }
 
 .name {
+    position: relative;
+    left: 10px;
+}
+.name {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
+
 .main-nav {
     background-color: #c2dea8;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    float: right;
+    margin: 0;
+    padding: 0;
+    border-top: #fff solid 5px;
 }
 
-.main-nav li{
-    display: inline-block;
-    padding-right: 10px;
+.main-nav li {
+    flex-direction: column;
+    border-bottom: #fff solid 5px;
+    line-height: 2.5;
+    font-size: 18px;
+    text-align: center;
+ 
 }
+
+.main-nav li a {
+    display: block;
+    width: 100%;
+}
+
+
 
 a:link {
     color: #2869f5;
@@ -98,23 +118,215 @@ section {
     margin: 0 auto;
 }
 
+.service-times tr {
+    width: 80%
+}
+
+.service-times td{
+    padding: 10px;
+}
+
 .footer {
     position: fixed;
+    margin-top: auto;
     left: 0;
     bottom: 0;
     background-color: #c2dea8;
     width: 100%;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
-
+.footer p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 .clearfix {
     content: "";
     clear: both;
     display: block;
   }
 
+
+  /* ================================= 
+  CSS Beliefs Page
+==================================== */
+.wrapper-beliefs {
+    margin-top: 355px;
+    padding-top: 10px;
+}
+
+#beliefs_heading {
+    margin-left: 15px;
+}
+
+.beliefs_list{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    list-style-type: disc;
+    line-height: 1.5em;
+}
+
+
+  /* ================================= 
+  CSS Contact Us Page
+==================================== */
+.wrapper-contact-us {
+    margin-top: 355px;
+    width: 100%;
+}
+
+.contact-heading {
+    margin: auto;
+    width: 80%;
+}
+
+.contact_heading {
+    text-align: center;
+}
+
+.contact_paragraph {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    margin: auto;
+    width: 90%;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+form input,
+     textarea{ 
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: center;
+    padding: 19px 39px 18px 39px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
 /* ================================= 
   Media Queries
 ==================================== */
 
+
+@media (min-width: 600px) {
+
+    .wrapper,
+    .wrapper-beliefs,
+    .wrapper-contact-us {
+        margin-top: 185px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .main-nav {
+        width: 100%;
+        border-bottom: #fff solid 5px;
+    }
+
+    .main-nav li {
+        float: left;
+        width: 20%;
+        border-bottom: none;
+
+    }
+
+    .main-nav li a {
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .wrapper,
+    .wrapper-beliefs,
+    .wrapper-contact-us {
+        margin-top: 185px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .main-nav {
+        width: 100%;
+        border-bottom: #fff solid 5px;
+    }
+
+    .main-nav li {
+        float: left;
+        width: 20%;
+        border-bottom: none;
+
+    }
+
+    .main-nav li a {
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+}
+
+
+@media (min-width: 1068px) {
+
+    .wrapper,
+    .wrapper-beliefs,
+    .wrapper-contact-us  {
+        margin-top: 185px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+
+    .main-nav {
+        width: 100%;
+        border-bottom: #fff solid 5px;
+    }
+
+    .main-nav li {
+        float: left;
+        width: 20%;
+        border-bottom: none;
+
+    }
+
+    .main-nav li a {
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+}

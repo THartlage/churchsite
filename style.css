@@ -33,7 +33,7 @@ table {
 
 .main-header {
     top: 0;
-    background-color: #e7f0b5;
+    background-color: #c2dea8;
     width: 100%;
     text-align: left;
     display: inline-block;
@@ -59,6 +59,7 @@ table {
 
 .main-nav {
     overflow: hidden;
+    width: 100%;
     /* background-color: #c2dea8;
     display: flex;
     justify-content: center;
@@ -125,11 +126,15 @@ a:link {
     display: block;
 }
 
+.extended_nav {
+    display: none;
+}
+
 .welcome {
     height: 100%;
     width: 100%;
     display: block;
-    background-color: #C0CC7E;
+    background-color: #e7f0b5;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 10px;
@@ -170,7 +175,7 @@ section {
 }
 
 .footer p{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0;
 }
 .clearfix {
@@ -185,19 +190,22 @@ section {
 ==================================== */
 .wrapper-beliefs {
     margin-top: 158px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #beliefs_heading {
     margin-left: 15px;
 }
 
+.beliefs_list {
+    padding-bottom: 101px;
+}
+
 .beliefs_list li{
     margin: auto;
     width: 80%;
     padding: 10px;
-    padding-bottom: 150px
-    list-style-type: circle;
+    list-style-type: disc;
     line-height: 1.5em;
 }
 
@@ -206,7 +214,7 @@ section {
   CSS Ministries Page
 ==================================== */
 .churchPics {
-    margin-top: 355px;
+    margin-top: 158px;
     width: 80%;
 }
 
@@ -229,7 +237,7 @@ section {
   CSS Contact Us Page
 ==================================== */
 .wrapper-contact-us {
-    margin-top: 355px;
+    margin-top: 158px;
     width: 100%;
 }
 
@@ -282,7 +290,7 @@ button{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10px;
-    width: 90%;
+    /* width: 90%; */
     text-align: center;
     padding: 19px 39px 18px 39px;
     border-radius: 10px;
@@ -299,13 +307,13 @@ button{
     .wrapper,
     .wrapper-beliefs,
     .wrapper-contact-us {
-        margin-top: 185px;
+        margin-top: 158px;
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
     }
 
-    .main-nav {
+    /* .main-nav {
         width: 100%;
         border-bottom: #fff solid 5px;
     }
@@ -320,6 +328,14 @@ button{
     .main-nav li a {
         text-align: center;
         padding: 15px 10px;
+    } */
+
+    .dropdown {
+        display: none;
+    }
+
+    .extended_nav {
+        display: inline-block;
     }
 
 }
@@ -336,7 +352,7 @@ button{
         width: 80%;
     }
 
-    .main-nav {
+    /* .main-nav {
         width: 100%;
         border-bottom: #fff solid 5px;
     }
@@ -351,6 +367,14 @@ button{
     .main-nav li a {
         text-align: center;
         padding: 15px 20px;
+    } */
+
+    .dropdown {
+        display: none;
+    }
+
+    .extended_nav {
+        display: inline-block;
     }
 
 }
@@ -367,7 +391,7 @@ button{
         width: 60%;
     }
 
-    .main-nav {
+    /* .main-nav {
         width: 100%;
         border-bottom: #fff solid 5px;
     }
@@ -382,6 +406,14 @@ button{
     .main-nav li a {
         text-align: center;
         padding: 15px 20px;
+    } */
+
+    .dropdown {
+        display: none;
+    }
+
+    .extended_nav {
+        display: inline-block;
     }
 
 }

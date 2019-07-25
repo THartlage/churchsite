@@ -21,8 +21,7 @@ function submitForm (e) {
         return false;
     }
 
-
-
+}
 
 //function for ministries carousel
 var slideCount = 0;
@@ -40,8 +39,4 @@ slideCount++;
 if (slideCount > pic.length) [slideCount = 1]
 pic[slideCount-1].style.display= "block";
 setTimeout(picCarousel, 3000);
-
-}
-
-
 

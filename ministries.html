@@ -35,29 +35,21 @@
                  </div>
          </nav>
     </header>
-    <div class = "churchPics">
-        <div class = "groupPic">
-            <img  src="images/children1.jpg">
-        </div>
-        <div class = "groupPic">
-            <img src="images/childsummer3.jpg">
-        </div>
-        <div class = "groupPic">
-            <img  src="images/childfall2.jpg">
-        </div>
-        <div class = "groupPic">
-            <img src="images/smallgroup1.jpg">
-        </div>
-        <div class = "groupPic">
-            <img  src="images/volunteer1.jpg">
-        </div>
-    </div>
+    
+    <img  src="images/children1.jpg" name = "slide" class="slideDiv">
+
+    <table class="slideNav">
+        <tr>
+            <td align="left"><a href="" onclick="return switch_image(-1)">Previous</a></td>
+            <td align="right"><a href="" onclick="return switch_image(1)">Next</a></td>
+        </tr>
+    </table>
 
     <footer class="footer">
             <p>Our Church<br> 123 Somewhere, Shepherdsville, KY 40165</p>
             <p>email@gmail.com<br>
             P: 502-555-5555</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
